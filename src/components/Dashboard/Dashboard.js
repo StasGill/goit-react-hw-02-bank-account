@@ -63,7 +63,7 @@ class Dashboard extends React.Component {
   };
 
   render() {
-    const { deposit, balance, withdrow, trans } = this.state;
+    const { deposit, balance, withdrow, transactions } = this.state;
     return (
       <div className="Reader">
         <ToastContainer />
@@ -73,7 +73,7 @@ class Dashboard extends React.Component {
           onChange={this.onChange}
         />
         <Balance deposit={deposit} balance={balance} withdrow={withdrow} />
-        <Transaction trans={trans} />
+        <Transaction trans={transactions} />
       </div>
     );
   }

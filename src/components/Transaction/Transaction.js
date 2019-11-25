@@ -29,7 +29,7 @@ function Transaction({ trans }) {
 Transaction.propTypes = {
   trans: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number,
+      id: PropTypes.string,
       type: PropTypes.string,
       amount: PropTypes.number,
       date: PropTypes.string,
